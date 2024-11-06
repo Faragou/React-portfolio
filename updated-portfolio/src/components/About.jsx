@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import './About.scss';
 
 const About = () => {
   const [currentText, setCurrentText] = useState('');
-  const interests = ['Web Development', 'Fullstack Development', 'Cloud Engineering'];
   const [interestIndex, setInterestIndex] = useState(0);
   const [typingIndex, setTypingIndex] = useState(0);
 
-  // Typewriter effect
+  // Wrap interests in useMemo to avoid re-creation on every render
+  const interests = useMemo(() => ['Web Development', 'Fullstack Development', 'Cloud Engineering'], []);
+
   useEffect(() => {
     const typingSpeed = 150;
     const delayBetweenInterests = 2000;
