@@ -1,0 +1,49 @@
+.about-section {
+  width: 100%;
+  padding: 3rem;
+  color: #fff;
+  background-color: #1b2735; // Optional: Set a different background color to distinguish it
+
+  .about-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .about-subtitle {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .about-description {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto 1rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .about-interests {
+    font-size: 1.5rem;
+    color: #b0c4de;
+    text-align: center;
+  }
+
+
+    .typewriter {
+      font-weight: bold;
+      color: #56ccf2;
+      border-right: 2px solid #56ccf2;
+      padding-right: 5px;
+      animation: blink 0.7s infinite step-end;
+    }
+}
+
+
+// Blink animation for typewriter effect
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
