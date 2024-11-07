@@ -1,6 +1,7 @@
 .about-section {
-  height: 100vh;
+  height: 130vh;
   width: 100%;
+  margin-bottom: 40px;
   padding: 3rem;
   color: #fff;
   background-color: linear-gradient(-45deg, rgba(0, 0, 255, 0), rgba(95, 145, 255, 1), rgba(0, 0, 255, 0));; // Optional: Set a different background color to distinguish it
@@ -48,3 +49,42 @@
     border-color: transparent;
   }
 }
+
+.spotify-button {
+  display: inline;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.spotify-iframe-container {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 10px;
+  max-height: 0;
+  
+}
+.spotify-description
+{
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto 1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+.spotify-section {
+  padding-top: 200px;
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto 1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+

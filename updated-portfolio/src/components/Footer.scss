@@ -1,0 +1,32 @@
+.footer {
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 20px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1rem;
+  
+  .footer-content {
+    position: relative;
+    z-index: 100; // Ensure footer content appears above the canvas
+  }
+    
+  p {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .footer-links {
+    margin-top: 10px;
+
+    .link {
+      margin: 0 10px;
+      color: #ffffff;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #56ccf2; // Change to a Spotify green or any accent color on hover
+      }
+    }
+  }
+}

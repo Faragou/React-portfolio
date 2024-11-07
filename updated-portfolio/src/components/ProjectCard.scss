@@ -1,0 +1,36 @@
+.project-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: #333;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+  }
+
+  .icon-container {
+    margin-bottom: 15px;
+    svg {
+      transition: transform 0.3s ease;
+    }
+  }
+
+  .project-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+
+  .project-description {
+    font-size: 1rem;
+    color: #666;
+  }
+
+  &:hover .icon-container svg {
+    transform: rotate(20deg) scale(1.1); // Subtle rotation and scale on hover
+  }
+}

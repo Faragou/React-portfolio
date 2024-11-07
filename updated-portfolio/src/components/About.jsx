@@ -1,13 +1,21 @@
 import React, { useState, useEffect, useMemo } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSpotify } from '@fortawesome/free-brands-svg-icons';
 import './About.scss';
 
 const About = () => {
   const [currentText, setCurrentText] = useState('');
   const [interestIndex, setInterestIndex] = useState(0);
   const [typingIndex, setTypingIndex] = useState(0);
-
+  const [showPlaylist, setShowPlaylist] = useState(false);
+ 
+  const togglePlaylist = () => {
+    setShowPlaylist(!showPlaylist);
+  };
   // Wrap interests in useMemo to avoid re-creation on every render
   const interests = useMemo(() => ['Web Development', 'Fullstack Development', 'Cloud Engineering'], []);
+
+  
 
   useEffect(() => {
     const typingSpeed = 150;
@@ -42,6 +50,27 @@ const About = () => {
       <p className="about-interests">
         I am interested in <span className="typewriter">{currentText}</span>
       </p>
+      <div className="spotify-section">
+        <button className="spotify-button" onClick={togglePlaylist}>
+        <FontAwesomeIcon icon={faSpotify} size="4x" color="green" />
+      </button>
+      <p className="spotify-description">Click the Spotify icon to see my favorite playlist I listen to when i code!</p>
+      </div>
+      {showPlaylist && (
+        <div className="spotify-iframe-container">
+          <iframe
+            style={{ borderRadius: '12px' }}
+            src="https://open.spotify.com/embed/playlist/0Ko9rDLJsfVYeoJFuoMZoq?utm_source=generator&theme=0"
+            width="100%"
+            height="352"
+            frameBorder="0"
+            allowFullScreen
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+            
+          ></iframe>
+        </div>
+      )}
     </section>
   );
 };
