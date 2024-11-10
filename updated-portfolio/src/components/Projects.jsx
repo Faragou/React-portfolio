@@ -1,28 +1,40 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import { FaReact, FaNodeJs, FaDatabase } from 'react-icons/fa'; // Example SVG icons from react-icons
+import { FaCarrot, FaCheck, FaShoppingBag, FaImage, FaCrosshairs } from 'react-icons/fa'; // Example SVG icons from react-icons
 import './Projects.scss';
+import ShoppingListImage from '../assets/Shopping_List.png';
+import ToDoListImage from '../assets/ToDo_List.png';
 
 const projectData = [
   {
-    title: 'React Portfolio',
-    description: 'A personal portfolio built with React and SCSS.',
-    icon: <FaReact size={40} color="#61DAFB" />, // React icon
-    url: 'https://your-portfolio-url.com',
+    title: 'DietWeb',
+    description: 'A dietetic website built with React and styled-components. (Click me to view the demo!)',
+    icon: <FaCarrot size={40} color="#61DAFB" />,
+    url: 'https://dietweb.netlify.app',
   },
   {
-    title: 'Node.js API',
-    description: 'A RESTful API built with Node.js and Express.',
-    icon: <FaNodeJs size={40} color="#68A063" />, // Node.js icon
-    url: 'https://your-api-url.com',
+    title: 'Shopping list',
+    description: 'A shopping list for personal use, built with HTML/CSS and JavaScript that is connected to a Firebase database.',
+    icon: <FaShoppingBag size={40} color="#61DAFB" /> ,
+    image: ShoppingListImage, 
+
   },
   {
-    title: 'Database Management',
-    description: 'A database management project with SQL and NoSQL databases.',
-    icon: <FaDatabase size={40} color="#4DB33D" />, // Database icon
-    url: 'https://your-database-url.com',
+    title: 'ToDo list',
+    description: 'A todo app for personal use built with React that is connected to a Firebase database for mobile devices.',
+    icon: <FaCheck size={40} color="#61DAFB" />, 
+    image: ToDoListImage, 
   },
-  // Add more projects as needed
+  {
+    title: 'Picture gallery',
+    description: 'A university project that is picture gallery built with Java that is generating a HTML page with the images in the project.',
+    icon: <FaImage size={40} color="#61DAFB" />, 
+  },
+  {
+    title: 'ManageYself',
+    description: 'A not yet deployed fullstack website implemented with Spring Boot and React where you can manage your teams, events and see your or other users statistics. Currently under development.',
+    icon: <FaCrosshairs size={40} color="#61DAFB" />, 
+  },
 ];
 
 const Projects = () => {
@@ -37,6 +49,7 @@ const Projects = () => {
             title={project.title}
             description={project.description}
             url={project.url}
+            image={project.image}
           />
         ))}
       </div>

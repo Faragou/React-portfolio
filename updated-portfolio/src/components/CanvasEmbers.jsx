@@ -10,24 +10,24 @@ const CanvasEmbers = () => {
     const embers = [];
     const emberCount = 200;
 
-    // Ember particle settings
+    
     const emberSettings = {
       maxSize: 4,
       minSize: 1,
-      maxSpeed: 2, // Slower speed for a more subtle effect
+      maxSpeed: 2, 
       minSpeed: 0.5,
-      color: 'rgba(0, 176, 255, 0.7)', // Orange-red color with transparency
+      color: 'rgba(0, 176, 255, 0.7)', 
     };
 
     // Adjust canvas size
     const resizeCanvas = () => {
       canvas.width = window.innerWidth;
-      canvas.height = 100; // Set a limited height for the embers effect
+      canvas.height = 100; 
     };
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
 
-    // Ember particle class
+    
     class Ember {
       constructor() {
         this.reset();
@@ -35,7 +35,7 @@ const CanvasEmbers = () => {
 
       reset() {
         this.x = Math.random() * canvas.width;
-        this.y = canvas.height + Math.random() * 50; // Start within the canvas area
+        this.y = canvas.height + Math.random() * 50; 
         this.size = emberSettings.minSize + Math.random() * (emberSettings.maxSize - emberSettings.minSize);
         this.speed = emberSettings.minSpeed + Math.random() * (emberSettings.maxSpeed - emberSettings.minSpeed);
         this.opacity = 1;
@@ -59,12 +59,12 @@ const CanvasEmbers = () => {
       }
     }
 
-    // Create initial embers
+    
     for (let i = 0; i < emberCount; i++) {
       embers.push(new Ember());
     }
 
-    // Animation loop
+    
     function animate() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -78,7 +78,7 @@ const CanvasEmbers = () => {
 
     animate();
 
-    // Cleanup on component unmount
+    
     return () => {
       window.removeEventListener('resize', resizeCanvas);
     };

@@ -2,18 +2,18 @@ import React, { forwardRef, useEffect, useRef } from 'react';
 import { useSticky } from './StickyContext';
 import './Navbar.scss';
 
-const Navbar = forwardRef((props, ref) => {
+const Navbar = forwardRef(() => {
   const navbarRef = useRef(null);
    const spacerRef = useRef(null);
   const { isSticky } = useSticky();
-  const { setIsSticky } = useSticky(); // Access setIsSticky from context
+  const { setIsSticky } = useSticky(); 
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setIsSticky(!entry.isIntersecting); // Set sticky when navbar is out of view
+        setIsSticky(!entry.isIntersecting); 
       },
-      { threshold: 0.01 } // Trigger when any part of the navbar leaves the viewport
+      { threshold: 0.01 } 
     );
 
     if (spacerRef.current) {
@@ -34,6 +34,7 @@ const Navbar = forwardRef((props, ref) => {
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
       </ul>
     </nav>
     </>

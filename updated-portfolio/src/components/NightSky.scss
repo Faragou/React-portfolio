@@ -6,13 +6,13 @@ $shooting-time: 3000ms;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; // Aligns navbar to the bottom of the container
+  justify-content: flex-end;
 }
 
 .night {
   position: relative;
   width: 100%;
-  height: calc(100vh - 60px); // Subtracts space for navbar height
+  height: calc(100vh - 60px); 
   transform: rotateZ(45deg);
   overflow: hidden;
 
@@ -119,11 +119,11 @@ $shooting-time: 3000ms;
     transform: translate(0, 0);
   }
   100% {
-    transform: translate(600px); // Increased diagonal distance
+    transform: translate(600px); 
   }
 }
 
-// Style navbar as a divider below the night section
+
 .navbar {
   position: relative;
   width: 100%;
@@ -132,7 +132,7 @@ $shooting-time: 3000ms;
   display: flex;
   justify-content: center;
   gap: 2rem;
-  z-index: 5; // Ensures it's on top but separated from the star animations
+  z-index: 5; 
 }
 
 .navbar-link {

@@ -12,7 +12,6 @@ const About = () => {
   const togglePlaylist = () => {
     setShowPlaylist(!showPlaylist);
   };
-  // Wrap interests in useMemo to avoid re-creation on every render
   const interests = useMemo(() => ['Web Development', 'Fullstack Development', 'Cloud Engineering'], []);
 
   

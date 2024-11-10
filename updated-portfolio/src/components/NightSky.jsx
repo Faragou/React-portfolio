@@ -1,6 +1,4 @@
-import React, { useEffect, useRef } from 'react';
 import Navbar from './Navbar.jsx';
-import { useSticky } from './StickyContext';
 import './NightSky.scss';
 
 const NightSky = () => {
