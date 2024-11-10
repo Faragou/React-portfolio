@@ -1,5 +1,5 @@
 .navbar-spacer {
-  height: 50px; 
+  height: 50px;
 }
 
 .navbar {
@@ -9,6 +9,9 @@
   text-align: center;
   padding: 5px 0;
   transition: box-shadow 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &.sticky {
     position: fixed;
@@ -17,23 +20,64 @@
   }
 
   ul {
+    display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      background: black;
+      width: 100%;
+      display: none; // Initially hide on mobile for a dropdown effect
+    }
   }
 
   li {
     display: inline-block;
     text-transform: uppercase;
+    margin: 0 15px;
+
+    @media (max-width: 768px) {
+      margin: 10px 0;
+      text-align: center;
+    }
   }
 
   a {
     text-decoration: none;
     color: #fcfff5;
-    padding: 22px;
+    padding: 10px 15px; // Adjust padding for mobile
+
+    @media (max-width: 768px) {
+      padding: 15px;
+    }
   }
 
   a:hover {
     background: #193449;
   }
+}
+
+/* Responsive Menu Toggle */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: #fcfff5;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 20px;
+  }
+}
+
+/* Show mobile menu on toggle */
+.navbar.open ul {
+  display: flex; // Show the dropdown menu on mobile when toggled
 }

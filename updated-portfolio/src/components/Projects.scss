@@ -1,12 +1,30 @@
 .projects-section {
   padding: 100px 40px;
+  padding-bottom: 140px;
   text-align: center;
+
+  @media (min-width: 768px) {
+    padding: 100px 40px;
+    padding-bottom: 140px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 120px 60px;
+  }
 }
 
 .section-title {
   font-size: 2rem;
   margin-bottom: 20px;
   color: white;
+
+   @media (min-width: 768px) {
+    font-size: 2rem;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 2.5rem;
+  }
 }
 
 .projects-grid {
@@ -15,4 +33,8 @@
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
+
+  @media (max-width: 576px) {
+    grid-template-columns: 1fr;
+  }
 }

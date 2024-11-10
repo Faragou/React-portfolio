@@ -29,11 +29,17 @@
   .project-title {
     font-size: 1.25rem;
     margin-bottom: 10px;
+    @media (max-width: 576px) {
+      font-size: 1.1rem;
+    }
   }
 
   .project-description {
     font-size: 1rem;
     color: #9b9a9a;
+     @media (max-width: 576px) {
+      font-size: 0.9rem;
+    }
   }
   .project-image {
     width: 100%;
