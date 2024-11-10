@@ -10,6 +10,7 @@ const Navbar = forwardRef(() => {
   const { setIsSticky } = useSticky(); 
 
   useEffect(() => {
+     const currentSpacer = spacerRef.current; // Copy to local variable
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsSticky(!entry.isIntersecting); 
@@ -17,13 +18,13 @@ const Navbar = forwardRef(() => {
       { threshold: 0.01 } 
     );
 
-    if (spacerRef.current) {
-      observer.observe(spacerRef.current);
+    if (currentSpacer) {
+      observer.observe(currentSpacer);
     }
 
     return () => {
-      if (spacerRef.current) {
-        observer.unobserve(spacerRef.current);
+      if (currentSpacer) {
+        observer.unobserve(currentSpacer);
       }
     };
   }, [setIsSticky]);

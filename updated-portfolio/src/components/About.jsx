@@ -66,7 +66,7 @@ const About = () => {
             allowFullScreen
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
-            
+            title="Spotify Playlist" // Add a unique title here
           ></iframe>
         </div>
       )}
