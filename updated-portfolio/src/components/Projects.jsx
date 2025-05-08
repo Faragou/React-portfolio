@@ -29,11 +29,13 @@ const projectData = [
     title: 'Picture gallery',
     description: 'A university project that is picture gallery built with Java that is generating a HTML page with the images in the project.',
     icon: <FaImage size={40} color="#61DAFB" />, 
+    url: 'https://github.com/Faragou/Prog2_Projekt'
   },
   {
     title: 'ManageYself',
-    description: 'A not yet deployed fullstack website implemented with Spring Boot and React where you can manage your teams, events and see your or other users statistics. Currently under development.',
+    description: 'A soccer management web application built with React and Spring Boot.',
     icon: <FaCrosshairs size={40} color="#61DAFB" />, 
+    url: 'https://manageyself.com'
   },
 ];
 

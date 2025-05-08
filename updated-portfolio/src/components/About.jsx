@@ -41,10 +41,10 @@ const About = () => {
       <h1 className="about-title">Welcome to my portfolio</h1>
       <h2 className="about-subtitle">About Me</h2>
       <p className="about-description">
-        Hey, my name is Patrik Bálint Faragó. I'm studying Computer Science Engineering BSc at University of Debrecen.
+        Hey, my name is Faragó Patrik Bálint. I am a fresh graduate of Computer Science Engineering BSc at University of Debrecen.
       </p>
       <p className="about-description">
-        I am a beginner developer who is interested in every aspect of development and likes to learn new technologies and improve in the ones I have learned so far.
+        I am a coding enthusiast who is interested in every aspect of development and likes to learn new technologies and improve in the ones I have learned so far.
       </p>
       <p className="about-interests">
         I am interested in <span className="typewriter">{currentText}</span>
