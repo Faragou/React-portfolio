@@ -36,6 +36,20 @@
     margin: 0 auto 1rem;
     line-height: 1.4;
     text-align: center;
+    
+    .highlight {
+      color: #007acc; /* A nice blue for highlights */
+      font-weight: 600;
+      background: rgba(0, 122, 204, 0.1);
+      padding: 0 4px;
+      border-radius: 4px;
+    }
+    .highlight:hover {
+      background: #007acc;
+      color: #fff;
+      transition: all 0.2s ease-in-out;
+    }
+    
 
     @media (min-width: 768px) {
       font-size: 1.25rem;

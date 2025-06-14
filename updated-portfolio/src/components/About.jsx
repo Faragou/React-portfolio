@@ -40,9 +40,15 @@ const About = () => {
     <section className="about-section">
       <h1 className="about-title">Welcome to my portfolio</h1>
       <h2 className="about-subtitle">About Me</h2>
+      
       <p className="about-description">
         Hey, my name is Faragó Patrik Bálint. I am a fresh graduate of Computer Science Engineering BSc at University of Debrecen.
       </p>
+      <p className="about-description">
+        I have almost <span className="highlight">1.5 years of experience</span> as a <span className="highlight">Junior Data Analyst</span> in the <span className="highlight">Data Collection & Management team</span>. In this role, I am responsible for programming surveys using <span className="highlight">IBM SPSS Data Collection / Dimensions script language</span> and developing <span className="highlight">custom solutions with jQuery</span>. I manage <span className="highlight">projects from proposal to invoicing</span>, ensuring smooth execution and delivery. My work involves close communication with <span className="highlight">client project managers</span> to understand their requirements, provide technical support, and align expectations during <span className="highlight">kickoff calls and meetings</span>. I have contributed to <span className="highlight">large-scale projects across Europe and the United States</span>.
+      </p>
+
+
       <p className="about-description">
         I am a coding enthusiast who is interested in every aspect of development and likes to learn new technologies and improve in the ones I have learned so far.
       </p>
