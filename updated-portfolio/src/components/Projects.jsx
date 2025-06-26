@@ -31,12 +31,6 @@ const projectData = [
     icon: <FaImage size={40} color="#61DAFB" />, 
     url: 'https://github.com/Faragou/Prog2_Projekt'
   },
-  {
-    title: 'ManageYself',
-    description: 'A soccer management web application built with React and Spring Boot. (Click me to view the demo!)',
-    icon: <FaCrosshairs size={40} color="#61DAFB" />, 
-    url: 'https://manageyself.com'
-  },
 ];
 
 const Projects = () => {
