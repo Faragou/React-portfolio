@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import { FaCarrot, FaCheck, FaShoppingBag, FaImage, FaCrosshairs } from 'react-icons/fa'; // Example SVG icons from react-icons
+import { FaCarrot, FaCheck, FaShoppingBag, FaImage } from 'react-icons/fa'; // Example SVG icons from react-icons
 import './Projects.scss';
 import ShoppingListImage from '../assets/Shopping_List.png';
 import ToDoListImage from '../assets/ToDo_List.png';
