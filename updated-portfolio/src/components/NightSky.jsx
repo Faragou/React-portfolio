@@ -16,7 +16,9 @@ const NightSky = () => {
         ))}
         <div className="hero-content">
           <h1 className="hero-title">Hi, I'm Patrik Bálint Faragó</h1>
-          <p className="hero-tagline">I am a graduate of computer science engineering.</p>
+          <p className="hero-tagline">I am a Computer Science Engineer</p>
+          <br />
+          <p className="hero-tagline">I work as an IT Specialist.</p>
         </div>
       </section>
       <Navbar />
