@@ -1,11 +1,18 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import { FaCarrot, FaCheck, FaShoppingBag, FaImage } from 'react-icons/fa'; // Example SVG icons from react-icons
+import { FaHouse, FaCarrot, FaCheck, FaBasketShopping, FaImage } from 'react-icons/fa6'; // Example SVG icons from react-icons
 import './Projects.scss';
 import ShoppingListImage from '../assets/Shopping_List.png';
 import ToDoListImage from '../assets/ToDo_List.png';
+import SharedLifeImage from '../assets/SharedLife_1.png';
 
 const projectData = [
+  {
+    title: 'SharedLife',
+    description: 'A web application created with React and Firebase that is used by two users. In this application the users have a shared calendar that they can export out into their native calendar application. They also have a shared shopping list and a shared financial tracker to track their expenses together, and individually as well.',
+    icon: <FaHouse size={40} color="#61DAFB" />,
+    image: SharedLifeImage, 
+  },
   {
     title: 'DietWeb',
     description: 'A dietetic website built with React and styled-components. (Click me to view the demo!)',
@@ -15,7 +22,7 @@ const projectData = [
   {
     title: 'Shopping list',
     description: 'A shopping list for personal use, built with HTML/CSS and JavaScript that is connected to a Firebase database.',
-    icon: <FaShoppingBag size={40} color="#61DAFB" /> ,
+    icon: <FaBasketShopping size={40} color="#61DAFB" /> ,
     image: ShoppingListImage, 
 
   },

@@ -11,7 +11,7 @@ const Footer = () => {
      <CanvasEmbers /> 
      <div className="footer-content">
       <p>
-        Made with <FontAwesomeIcon icon={faHeart} style={{ color: 'blue' }} /> by faragou @2024
+        Made with <FontAwesomeIcon icon={faHeart} style={{ color: 'blue' }} /> by faragou @2025
       </p>
       <div className="footer-links">
         <a
